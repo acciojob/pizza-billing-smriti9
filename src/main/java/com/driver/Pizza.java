@@ -23,7 +23,7 @@ public class Pizza {
             price = 400;
             extra_Topping=120;
         }
-        bill="Base Price Of The Pizza:"+price+"\n";
+        bill="Base Price Of The Pizza: "+price+"\n";
     }
 
     public int getPrice(){
@@ -56,13 +56,13 @@ public class Pizza {
        if(!is_Bill_generate) {
            is_Bill_generate=true;
            if (is_Extra_Cheese)
-               bill = bill + "Extra Cheese Added:" + extra_Cheese + "\n";
+               bill = bill + "Extra Cheese Added: " + extra_Cheese + "\n";
            if (is_Extra_Topping)
-               bill = bill + "Extra Toppings Added:" + extra_Topping + "\n";
+               bill = bill + "Extra Toppings Added: " + extra_Topping + "\n";
            if (is_Paper_Bag)
-               bill = bill + "Paperbag Added:" + paper_Bag + "\n";
+               bill = bill + "Paperbag Added: " + paper_Bag + "\n";
 
-           bill = bill + "Total Price:" + price + "\n";
+           bill = bill + "Total Price: " + price + "\n";
        }
        //  returning ans
         return this.bill;
